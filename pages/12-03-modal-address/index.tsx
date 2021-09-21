@@ -26,7 +26,7 @@ export default function ModalAddressPage(){
 
   return (
     <>
-      <button onClick={onOpenZipcode}>우편번호 검색</button>
+      <button onClick={onOpenZipcode}>우편번호 검색.</button>
       {isOpen && (
       <Modal visible={true} onCancel={onCloseZipcode}>
         <DaumPostcode onComplete={handleComplete} />
